@@ -1,17 +1,13 @@
 def fake_bin(x):
-    for elem in x:
-        for i in elem:
+    string = ''
+    for num in x:
+        for i in num:
             if int(i) < 5:
-                i.replace(i, "0")
-            elif int(i) > 5:
-                i.replace(i, "1")
-    return x
+                string += '0'
+            elif int(i) >= 5:
+                string += '1'
+    return string
 
 
-print(fake_bin([
-            ["01011110001100111", "45385593107843568"],
-            ["101000111101101", "509321967506747"],
-            ["011011110000101010000011011", "366058562030849490134388085"],
-            ["01111100", "15889923"],
-            ["100111001111", "800857237867"],
-        ]))
+
+print(fake_bin(["45385593107843568"]))
