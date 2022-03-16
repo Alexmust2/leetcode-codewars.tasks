@@ -1,11 +1,12 @@
+
 def no_boring_zeros(n):
+    if n == 0:
+        return 0
     n = str(n)
-    for i in n:
-        while i == "0":
-            n += n.replace("0", "")
-    return n
-    
+    return int(n.rstrip("0")) 
+        
 
 
 
-print (no_boring_zeros(960000))
+
+print (no_boring_zeros(105000))
