@@ -1,9 +1,10 @@
 def find_multiples(integer, limit):
-    ls = [integer]
+    ls = []
+    rang = limit // integer 
     s = integer
-    for i in range(integer+1):
+    for i in range(rang+1):
+        ls.append(s)
         s += integer
-        ls.append(integer)
     return ls[:-1]
 
 
