@@ -1,8 +1,3 @@
-from operator import le
-from os import remove
-from re import U
-
-
 def shortcut(s):
     s = list(s)
     while "o" in s:
